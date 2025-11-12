@@ -26,7 +26,7 @@ const Blog = ({blog, handleBookmark, handleMarkAsRead}) => {
     
               <div className="flex">
                 {
-                hashtags.map((hash) => <p>{hash}</p>)
+                hashtags.map((hash) => <p key={hash}>{hash}</p>)
                 }
               </div>
               <div className="card-actions justify-between">
